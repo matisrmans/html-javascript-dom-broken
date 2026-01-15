@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     taskListContainer.appendChild(listItem);
+
+    return taskListContainer;
   }
 
   function addTask() {
@@ -74,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
     taskInput.value = "";
     taskInput.focus();
   }
+
+  addTaskButton.addEventListener('click', addTask);
 
   taskInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
