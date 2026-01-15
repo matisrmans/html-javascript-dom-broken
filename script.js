@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const taskInput = document.getElementById("taskInput");
   const addTaskButton = document.getElementById("addTaskButton");
   const STORAGE_KEY = "todoTasks";
+  const taskListContainer = document.getElementById('taskList'); 
 
   function saveTasks() {
     let tasks = [];
